@@ -79,3 +79,8 @@ li {
   background-color: rgba(2, 5, 160);
   color: white;
 }
+
+.checked {
+  text-decoration: line-through;
+  color: gray;
+}

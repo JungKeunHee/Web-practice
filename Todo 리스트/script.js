@@ -23,6 +23,14 @@ submit.addEventListener("click", function () {
     li.appendChild(del);
     inputValue.value = ""; // 입력 필드 초기화
 
+    input.addEventListener("click", function () {
+      if (input.checked) {
+        label.classList.add("checked");
+      } else {
+        label.classList.remove("checked");
+      }
+    });
+
     // 삭제 버튼 클릭 시 해당 li 삭제
     del.addEventListener("click", function () {
       if (input.checked) {
