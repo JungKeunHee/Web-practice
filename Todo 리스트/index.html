@@ -8,21 +8,34 @@
   </head>
   <body>
     <div class="container">
-      <div class="title">
-        <h1>To-Do List</h1>
+      <div class="container2">
+        <h1 class="title">To-Do List</h1>
       </div>
-      <div class="textBox">
-        <input
-          class="inputbox"
-          type="text"
-          placeholder="할 일을 등록해주세요"
-          id="textContent"
-        />
+      <div class="container3">
+        <div class="container4">
+          <input type="date" id="date" class="date" />
+          <div class="textBox">
+            <input
+              class="inputbox"
+              type="text"
+              placeholder="할 일을 등록해주세요"
+              id="textContent"
+            />
+          </div>
+          <button type="submit" class="button" id="submit">등록하기</button>
+        </div>
+        <div class="list">
+          <ul class="textArea" id="textArea"></ul>
+        </div>
+        <div class="selectAllButton">
+          <button type="submit" class="selectAll" id="selectAll">
+            전체선택
+          </button>
+          <button type="submit" class="deleteAll" id="deleteAll">
+            전체삭제
+          </button>
+        </div>
       </div>
-      <div>
-        <button type="submit" class="button" id="submit">등록하기</button>
-      </div>
-      <ul class="textArea" id="textArea"></ul>
     </div>
     <script src="script.js"></script>
   </body>
